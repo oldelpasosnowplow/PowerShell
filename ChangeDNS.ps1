@@ -1,6 +1,6 @@
 ﻿# Script Created by Oldelpasosnowplow 
 # On Tuesday, February 8th, 2022 @ 12:13 UTC
-# This is completely open source to any and all that want to use it
+# This is completely open to any and all that want to use it
 # The following script was created because I needed a way to change DNS settings on statically set IP Address on my servers
 # Using PDQ I was able to deploy this script across my network to the statically set IP Addresses and change them
 # when we changed domain controllers to a different VLAN
