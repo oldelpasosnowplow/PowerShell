@@ -47,7 +47,7 @@ while (!($valid))
     $username = Read-Host -Prompt "Enter username (samAccountName)"
     
 
-    # Find user and set EmployeeID
+    # Find user
     try
     {
         $aduser = Get-ADUser -identity $username
@@ -59,16 +59,17 @@ while (!($valid))
     }
 }
 
-#Values to change to meet your needs
-$domain = "yourdomainhere"
-$basedirpath = "C:\Temp"
-
-# Set Employee Clock Number
+# Set Employee Clock Number in AD
 $employeeID = Read-Host -Prompt "Enter Employee Clock Number"
 $aduser | Set-ADUser -EmployeeID $employeeID
 
+# Values to change to meet your needs
+$domain = "yourdomainhere"
+$basedirpath = "C:\Temp"
+
+
 # Create Documents Folder and set permissions
-$dept = Get-SelectionFromUser -Options ('Accounting','Administration','Engineering','Human Resources','Information Systems') -Prompt 'Select Department Folder' #Add as many options as you like
+$dept = Get-SelectionFromUser -Options ('Accounting','Administration','Human Resources','Information Systems') -Prompt 'Select Department Folder' #Add as many options as you like
 $docPath = "$basedirpath\$dept\$username"
 
 # If Directory exists exit the script
@@ -103,5 +104,3 @@ foreach($identity in $acl.Access)
         Set-Acl -Path $docPath -AclObject $dACl
     }
 }
-
-
