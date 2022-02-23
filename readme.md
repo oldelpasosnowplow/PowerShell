@@ -9,3 +9,5 @@ WSUSReport - Will generate and email a nice colorful report to an email address.
 ChangeFolderPermission - Will help change folder permissions for a user or a group.
 
 VMReport - This will display information about VMs on a vCenter system.
+
+NewUserSetup - Set employeeID in AD, creates documents folder and gives modify permissions, then strips off any inherited permissions that are not needed.
