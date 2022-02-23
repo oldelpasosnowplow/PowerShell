@@ -7,3 +7,5 @@ ChangeManager - Allows you to change old managers to new managers under the Orga
 WSUSReport - Will generate and email a nice colorful report to an email address.  The report shows computer status on updates, errors and last reboots.
 
 ChangeFolderPermission - Will help change folder permissions for a user or a group.
+
+VMReport - This will display information about VMs on a vCenter system.
