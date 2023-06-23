@@ -1,6 +1,6 @@
 Useful PowerShell scripts I used to help manage my network.  I hope you find them useful as well.
 
-ChangeDNS - Will allow you to change staticly set network adapters DNS servers.
+ChangeDNS - Will allow you to change statically set network adapters DNS servers.
 
 ChangeManager - Allows you to change old managers to new managers under the Organization tab in the User Account in Active Directory.
 
