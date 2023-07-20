@@ -4,7 +4,9 @@ ChangeDNS - Will allow you to change statically set network adapters DNS servers
 
 ChangeManager - Allows you to change old managers to new managers under the Organization tab in the User Account in Active Directory.
 
-MoveDisabledUserAccounts - Finds all disabled and deprovisioned accounts in ARS and moves them to another OU.
+MoveDisabledUserAccounts - Finds all disabled and deprovisioned user accounts in ARS and moves them to another OU.
+
+MoveDisabledComputerAccounts - Finds all disabled and deprovisioned computer accounts in ARS and moves them to another OU.
 
 WSUSReport - Will generate and email a nice colorful report to an email address.  The report shows computer status on updates, errors and last reboots.
 
